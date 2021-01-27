@@ -49,12 +49,12 @@ bpy.types.Object.uvScale = FloatVectorProperty(name = "UV Second Scale",subtype=
 bpy.types.Object.uvOffset = FloatVectorProperty(name = "UV Offset",subtype='XYZ',precision=2,size=2,default=(0,0))
 
 
-#TODO: maybe make sure to have at least one uv map????
+#TODO: maybe make sure to have at least one uv map?
 #TODO: problem with mirror modifiers and all that? modifiers that depend on other positions?
-#make target relative be possible but use world origin as default for offset.!
+#make target relative be possible for collection mode but use world origin as default for offset
 
 #hidden collections at least with instancing doesn't work
-#instancing inside colleciton doesn't work when follection mode
+#instancing inside colleciton doesn't work when collection mode
 #make it fail when the target is the same data as the o?
 
 def rotate(origin, point, angle):
